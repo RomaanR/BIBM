@@ -489,22 +489,6 @@ select {
   stroke-width: 2.1;
 }
 
-.quick-finder {
-  background:
-    linear-gradient(135deg, rgba(16, 42, 67, 0.04), rgba(15, 118, 110, 0.08)),
-    #eef4f8;
-  border-bottom: 1px solid var(--line);
-}
-
-.quick-finder__inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
-  align-items: center;
-  gap: 32px;
-  padding: 32px 0;
-}
-
-.quick-finder h2,
 .section-heading h2,
 .why h2,
 .admissions h2,
@@ -517,7 +501,6 @@ select {
   letter-spacing: 0;
 }
 
-.quick-finder .section-kicker,
 .section-heading .section-kicker,
 .why .section-kicker,
 .admissions .section-kicker,
@@ -536,27 +519,6 @@ select {
   border: 1px solid var(--line);
   background: #ffffff;
   box-shadow: 0 16px 42px rgba(16, 42, 67, 0.08);
-}
-
-.finder-tools {
-  display: grid;
-  gap: 12px;
-}
-
-.finder-suggestions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.finder-suggestions span {
-  border: 1px solid rgba(16, 42, 67, 0.12);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  color: var(--navy);
-  font-size: 0.78rem;
-  font-weight: 800;
-  padding: 8px 10px;
 }
 
 .finder-search svg {
@@ -1800,11 +1762,12 @@ select {
 
 .partner-story-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
 .partner-story-grid article {
+  scroll-margin-top: 96px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #ffffff;
@@ -2088,7 +2051,6 @@ select {
     font-size: 0.8rem;
   }
 
-  .quick-finder__inner,
   .section-heading,
   .footer__inner {
     display: grid;
