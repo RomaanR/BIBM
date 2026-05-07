@@ -635,6 +635,10 @@ select {
   margin-bottom: 28px;
 }
 
+.programmes .pathway-showcase {
+  margin-bottom: 0;
+}
+
 .pathway-card {
   position: relative;
   display: flex;
