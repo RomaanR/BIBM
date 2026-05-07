@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmes | Bristol Institute of Business Management</title>
+    <meta
+      name="description"
+      content="Explore every programme listed by Bristol Institute of Business Management, including UWE Bristol, DLC Sri Lanka, and ACCA pathways."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Bristol Institute home">
+          <img class="brand__logo" src="assets/bristol-logo.svg" alt="Bristol Institute" />
+        </a>
+
+        <nav class="nav__links" data-nav aria-label="Main navigation">
+          <a href="programmes.html" aria-current="page">Programmes</a>
+          <a href="about.html">Why Bristol</a>
+          <a href="about.html#partners">Partners</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a class="icon-link" href="https://wa.me/94777552266" aria-label="WhatsApp Bristol">
+            <i data-lucide="message-circle"></i>
+          </a>
+          <a class="button button--primary" href="https://my.bristolinstitute.edu.lk/applicationform.php" target="_blank" rel="noopener">
+            <span>Apply Online</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="icon-link icon-link--student icon-link--moodle" href="https://moodle.bristolinstitute.edu.lk" target="_blank" rel="noopener" aria-label="Open Moodle" title="Moodle">
+            <i data-lucide="book-open"></i>
+          </a>
+          <a class="icon-link icon-link--student icon-link--portal" href="https://my.bristolinstitute.edu.lk" target="_blank" rel="noopener" aria-label="Open Student Portal" title="Student Portal">
+            <i data-lucide="log-in"></i>
+          </a>
+          <button class="menu-button" type="button" data-menu-toggle aria-label="Open menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--programmes">
+        <div class="page-hero__media" aria-hidden="true"></div>
+        <div class="container page-hero__content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <span>Programmes</span>
+          </nav>
+          <p class="eyebrow">Programme finder</p>
+          <h1>Find a pathway that fits your next move.</h1>
+          <p>
+            Browse all 18 programmes currently listed by Bristol Institute:
+            UK awarded UWE routes, DLC foundation and higher diploma routes, and ACCA.
+          </p>
+        </div>
+      </section>
+
+      <section class="programme-directory section">
+        <div class="container directory-layout">
+          <aside class="directory-panel" aria-label="Programme filters">
+            <p class="section-kicker">Filter</p>
+            <h2>Refine programmes</h2>
+            <form class="finder-search finder-search--directory" role="search" data-search-form>
+              <i data-lucide="search"></i>
+              <input
+                type="search"
+                placeholder="Search programmes"
+                aria-label="Search programmes"
+                data-programme-search
+              />
+            </form>
+            <div class="filter-group">
+              <span class="filter-label">By level</span>
+              <div class="filter-tabs filter-tabs--stacked" aria-label="Filter programmes by level">
+                <button class="filter-tabs__button is-active" type="button" data-filter="all">All programmes</button>
+                <button class="filter-tabs__button" type="button" data-filter="foundation">Foundation</button>
+                <button class="filter-tabs__button" type="button" data-filter="higher-diploma">Higher Diploma</button>
+                <button class="filter-tabs__button" type="button" data-filter="undergraduate">Undergraduate</button>
+                <button class="filter-tabs__button" type="button" data-filter="postgraduate">Postgraduate</button>
+                <button class="filter-tabs__button" type="button" data-filter="acca">ACCA</button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">By awarding body</span>
+              <div class="filter-tabs filter-tabs--stacked" aria-label="Filter programmes by awarding body">
+                <button class="filter-tabs__button is-active" type="button" data-awarding-filter="all">All awarding bodies</button>
+                <button class="filter-tabs__button" type="button" data-awarding-filter="uwe">UWE Bristol</button>
+                <button class="filter-tabs__button" type="button" data-awarding-filter="dlc">DLC Sri Lanka</button>
+                <button class="filter-tabs__button" type="button" data-awarding-filter="acca">ACCA</button>
+              </div>
+            </div>
+            <div class="advisor-box">
+              <i data-lucide="messages-square"></i>
+              <h3>Need help choosing?</h3>
+              <p>Admissions can guide students through entry requirements, intakes, and fees.</p>
+              <a class="button button--secondary button--full" href="https://wa.me/94777552266">
+                <span>Chat on WhatsApp</span>
+                <i data-lucide="message-circle"></i>
+              </a>
+            </div>
+          </aside>
+
+          <div class="directory-main">
+            <div class="directory-summary">
+              <div>
+                <p class="section-kicker">All programmes</p>
+                <h2>18 programmes from the current Bristol site</h2>
+              </div>
+              <p>
+                Each programme now has its own detail page, giving the prototype
+                a consistent admissions journey instead of a single MBA sample.
+              </p>
+            </div>
+
+            <div class="programme-grid programme-grid--directory" data-programme-grid>
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="mba master business administration uwe bristol postgraduate leadership management"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>MBA - Master of Business Administration</h3>
+                <p>A one-year postgraduate business programme designed to help future leaders navigate contemporary business challenges through strategy, responsible leadership, operations, and applied research.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-mba.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="undergraduate"
+                data-awarding="uwe"
+                data-keywords="llb law uwe bristol undergraduate solicitor barrister legal"
+              >
+                <span class="programme-card__level">Undergraduate</span>
+                <h3>LLB - Bachelor's in Law</h3>
+                <p>A practical law pathway covering core legal foundations, commercial law, cyber law, mediation, human rights, and applied legal reasoning.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>36 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-llb-law.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="undergraduate"
+                data-awarding="uwe"
+                data-keywords="international business management top up uwe undergraduate"
+              >
+                <span class="programme-card__level">Undergraduate</span>
+                <h3>BA (Hons) International Business Management TOP-UP</h3>
+                <p>A top-up route for students with prior higher diploma or equivalent credits who want an international business management degree.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-international-business-management-top-up.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="msc accounting finance top up uwe acca cima postgraduate"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>MSc in Accounting and Finance - Top Up</h3>
+                <p>A focused top-up route for ACCA affiliates and CIMA passed finalists with contemporary finance and research modules.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-msc-accounting-finance-top-up.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="llm global business finance law uwe postgraduate legal"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>LLM in Global Business and Finance Law</h3>
+                <p>A specialist legal programme covering global commercial law, corporate governance, banking law, financial crime, and international business.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-llm-global-business-finance-law.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="foundation"
+                data-awarding="dlc"
+                data-keywords="foundation business management dlc ordinary level business"
+              >
+                <span class="programme-card__level">Foundation</span>
+                <h3>Foundation in Business Management</h3>
+                <p>A foundation route covering English, mathematics, academic writing, essentials in business, marketing, and business economics.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-foundation-business-management.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="foundation"
+                data-awarding="dlc"
+                data-keywords="foundation accounting finance dlc ordinary level"
+              >
+                <span class="programme-card__level">Foundation</span>
+                <h3>Foundation in Accounting and Finance</h3>
+                <p>An accounting and finance foundation introducing financial accounting, management accounting, mathematics, academic writing, and business fundamentals.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-foundation-accounting-finance.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="foundation"
+                data-awarding="dlc"
+                data-keywords="foundation psychology dlc counselling applied psychology"
+              >
+                <span class="programme-card__level">Foundation</span>
+                <h3>Foundation in Psychology</h3>
+                <p>A foundation route for students preparing to progress into psychology, counselling, or applied psychology pathways.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-foundation-psychology.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="foundation"
+                data-awarding="dlc"
+                data-keywords="foundation teaching dlc early childhood primary teaching"
+              >
+                <span class="programme-card__level">Foundation</span>
+                <h3>Foundation in Teaching</h3>
+                <p>A foundation route for students preparing to progress into teaching, early childhood education, or primary teaching pathways.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-foundation-teaching.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="foundation"
+                data-awarding="dlc"
+                data-keywords="foundation information technology it dlc computing"
+              >
+                <span class="programme-card__level">Foundation</span>
+                <h3>Foundation in Information Technology</h3>
+                <p>A foundation route for students preparing to progress into information technology, management IT, or AI and data science pathways.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-foundation-information-technology.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma business management dlc"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Business Management</h3>
+                <p>A higher diploma covering advanced business knowledge in marketing, economics, business law, operations, research, and people management.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-business-management.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma accounting finance dlc"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Accounting and Finance</h3>
+                <p>A higher diploma covering accounting, finance, statistics, taxation, corporate governance, and financial management.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-accounting-finance.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher dip management information technology mit dlc"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Dip in Management and Information Technology</h3>
+                <p>A higher diploma combining management knowledge with information technology, digital systems, and applied business technology.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-dip-management-information-technology.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma counselling applied psychology dlc"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Counselling and Applied Psychology</h3>
+                <p>A higher diploma introducing counselling practice, applied psychology, human development, communication, and research foundations.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-counselling-applied-psychology.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma artificial intelligence data science ai dlc machine learning"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Artificial Intelligence and Data Science</h3>
+                <p>A higher diploma covering AI, programming, machine learning, data processing, cloud computing, NLP, big data, IoT, and a capstone project.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-ai-data-science.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma early childhood education dlc teaching"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Early Childhood Education</h3>
+                <p>A higher diploma focused on child development, early learning environments, teaching practice, and education foundations.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-early-childhood-education.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="higher-diploma"
+                data-awarding="dlc"
+                data-keywords="higher diploma primary teaching dlc education"
+              >
+                <span class="programme-card__level">Higher Diploma</span>
+                <h3>Higher Diploma in Primary Teaching</h3>
+                <p>A higher diploma route for students preparing for primary teaching, classroom practice, learning design, and child-centered education.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>DLC Sri Lanka</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>16 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-higher-diploma-primary-teaching.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="acca"
+                data-awarding="acca"
+                data-keywords="acca accounting finance taxation audit professional qualification"
+              >
+                <span class="programme-card__level">Professional</span>
+                <h3>ACCA Programme</h3>
+                <p>A professional accounting pathway covering applied knowledge, applied skills, and strategic professional level papers.</p>
+                <dl>
+                  <div>
+                    <dt>Qualification</dt>
+                    <dd>ACCA</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>Flexible</dd>
+                  </div>
+                </dl>
+                <a href="programme-acca.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div class="container contact-strip__inner">
+          <div>
+            <p class="section-kicker">Admissions support</p>
+            <h2>Shortlist programmes, then talk to an advisor.</h2>
+          </div>
+          <div class="contact-strip__actions">
+            <a class="button button--primary" href="contact.html">
+              <span>Request Guidance</span>
+              <i data-lucide="send"></i>
+            </a>
+            <a class="button button--ghost-dark" href="tel:+94777552266">
+              <span>Call Admissions</span>
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand brand--footer" href="index.html">
+            <img class="brand__logo" src="assets/bristol-logo-white.svg" alt="Bristol Institute" />
+          </a>
+          <p>07 Walukarama Rd, Colombo 00300 | info@bristolinstitute.edu.lk</p>
+        </div>
+        <div class="footer__links">
+          <a href="programmes.html">Programmes</a>
+          <a href="about.html">Why Bristol</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
