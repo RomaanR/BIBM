@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UWE Bristol | Bristol Institute</title>
+    <meta
+      name="description"
+      content="UWE Bristol pathways connect Bristol Institute students with UK awarded business, law, accounting, finance, and management routes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Bristol Institute home">
+          <img class="brand__logo" src="assets/bristol-logo.svg" alt="Bristol Institute" />
+        </a>
+
+        <nav class="nav__links" data-nav aria-label="Main navigation">
+          <a href="programmes.html" aria-current="page">Programmes</a>
+          <a href="about.html">Why Bristol</a>
+          <a href="about.html#partners">Partners</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a class="icon-link" href="https://wa.me/94777552266" aria-label="WhatsApp Bristol">
+            <i data-lucide="message-circle"></i>
+          </a>
+          <a class="button button--primary" href="https://my.bristolinstitute.edu.lk/applicationform.php" target="_blank" rel="noopener">
+            <span>Apply Online</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="icon-link icon-link--student icon-link--moodle" href="https://moodle.bristolinstitute.edu.lk" target="_blank" rel="noopener" aria-label="Open Moodle" title="Moodle">
+            <i data-lucide="book-open"></i>
+          </a>
+          <a class="icon-link icon-link--student icon-link--portal" href="https://my.bristolinstitute.edu.lk" target="_blank" rel="noopener" aria-label="Open Student Portal" title="Student Portal">
+            <i data-lucide="log-in"></i>
+          </a>
+          <button class="menu-button" type="button" data-menu-toggle aria-label="Open menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="university-hero" style="--university-hero: url('assets/university-uwe-bristol-header.png')">
+        <div class="container university-hero__content">
+          <nav class="breadcrumb breadcrumb--light" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <a href="programmes.html">Programmes</a>
+            <i data-lucide="chevron-right"></i>
+            <span>UWE Bristol</span>
+          </nav>
+          <p class="eyebrow">UK awarded degree partner</p>
+          <h1>UWE Bristol</h1>
+          <p>UWE Bristol pathways connect Bristol Institute students with UK awarded business, law, accounting, finance, and management routes.</p>
+          <div class="hero__actions">
+            <a class="button button--primary button--large" href="#programmes-offered">
+              <span>View Programmes</span>
+              <i data-lucide="layout-grid"></i>
+            </a>
+            <a class="button button--ghost button--large" href="https://wa.me/94777552266">
+              <span>Talk to an Advisor</span>
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="university-profile section">
+        <div class="container university-profile__layout">
+          <div class="university-profile__media">
+            <img src="assets/university-uwe-bristol.png" alt="UWE, Bristol" />
+          </div>
+          <div class="university-profile__copy">
+            <p class="section-kicker">Partner story</p>
+            <h2>About UWE Bristol</h2>
+            <p>The University of the West of England is a modern UK university based in Bristol, recognized on the original Bristol site for teaching quality, research, employability, and strong industry links.</p>
+            <p>UWE Bristol was established in 1992 and offers hundreds of courses across disciplines including business, engineering, health, and the arts. Its learning environment is positioned around practical experience, placement opportunities, and innovation-led facilities.</p>
+            <p>In 2019, UWE Bristol received Gold status in the Teaching Excellence and Student Outcomes Framework, the highest possible TEF rating at the time, reflecting its teaching and student outcome strengths.</p>
+            <div class="university-facts" aria-label="UWE Bristol highlights">
+              <span>Established 1992</span>
+              <span>600+ courses</span>
+              <span>TEF Gold recognition</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="university-programmes section" id="programmes-offered">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Programmes offered</p>
+              <h2>UWE Bristol programmes</h2>
+            </div>
+            <p class="section-note">These are the current UWE Bristol awarded routes represented in the prototype.</p>
+          </div>
+
+          <div class="programme-grid programme-grid--partner">
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="mba master business administration uwe bristol postgraduate leadership management"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>MBA - Master of Business Administration</h3>
+                <p>A one-year postgraduate business programme designed to help future leaders navigate contemporary business challenges through strategy, responsible leadership, operations, and applied research.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-mba.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="undergraduate"
+                data-awarding="uwe"
+                data-keywords="llb law uwe bristol undergraduate solicitor barrister legal"
+              >
+                <span class="programme-card__level">Undergraduate</span>
+                <h3>LLB - Bachelor's in Law</h3>
+                <p>A practical law pathway covering core legal foundations, commercial law, cyber law, mediation, human rights, and applied legal reasoning.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>36 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-llb-law.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="undergraduate"
+                data-awarding="uwe"
+                data-keywords="international business management top up uwe undergraduate"
+              >
+                <span class="programme-card__level">Undergraduate</span>
+                <h3>BA (Hons) International Business Management TOP-UP</h3>
+                <p>A top-up route for students with prior higher diploma or equivalent credits who want an international business management degree.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-international-business-management-top-up.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="msc accounting finance top up uwe acca cima postgraduate"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>MSc in Accounting and Finance - Top Up</h3>
+                <p>A focused top-up route for ACCA affiliates and CIMA passed finalists with contemporary finance and research modules.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>8 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-msc-accounting-finance-top-up.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+
+              <article
+                class="programme-card"
+                data-category="postgraduate"
+                data-awarding="uwe"
+                data-keywords="llm global business finance law uwe postgraduate legal"
+              >
+                <span class="programme-card__level">Postgraduate</span>
+                <h3>LLM in Global Business and Finance Law</h3>
+                <p>A specialist legal programme covering global commercial law, corporate governance, banking law, financial crime, and international business.</p>
+                <dl>
+                  <div>
+                    <dt>Awarding body</dt>
+                    <dd>UWE Bristol</dd>
+                  </div>
+                  <div>
+                    <dt>Duration</dt>
+                    <dd>12 months</dd>
+                  </div>
+                </dl>
+                <a href="programme-llm-global-business-finance-law.html" class="card-action">
+                  View programme
+                  <i data-lucide="arrow-up-right"></i>
+                </a>
+              </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div class="container contact-strip__inner">
+          <div>
+            <p class="section-kicker">Admissions support</p>
+            <h2>Interested in UWE Bristol?</h2>
+          </div>
+          <div class="contact-strip__actions">
+            <a class="button button--primary" href="https://my.bristolinstitute.edu.lk/applicationform.php" target="_blank" rel="noopener">
+              <span>Apply Online</span>
+              <i data-lucide="send"></i>
+            </a>
+            <a class="button button--ghost-dark" href="programmes.html">
+              <span>Compare All Programmes</span>
+              <i data-lucide="layout-grid"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="brand brand--footer" href="index.html">
+            <img class="brand__logo" src="assets/bristol-logo-white.svg" alt="Bristol Institute" />
+          </a>
+          <p>07 Walukarama Rd, Colombo 00300 | info@bristolinstitute.edu.lk</p>
+        </div>
+        <div class="footer__links">
+          <a href="programmes.html">Programmes</a>
+          <a href="about.html">Why Bristol</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

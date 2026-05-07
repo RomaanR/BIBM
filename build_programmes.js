@@ -619,6 +619,72 @@ const partnerKey = (partner) => {
   return "other";
 };
 
+const partnerPages = [
+  {
+    title: "UWE Bristol",
+    originalTitle: "UWE, Bristol",
+    partner: "UWE Bristol",
+    slug: "university-uwe-bristol.html",
+    sourceUrl: "https://bristolinstitute.edu.lk/university/4",
+    eyebrow: "UK awarded degree partner",
+    heroImage: "assets/university-uwe-bristol-header.png",
+    image: "assets/university-uwe-bristol.png",
+    summary:
+      "UWE Bristol pathways connect Bristol Institute students with UK awarded business, law, accounting, finance, and management routes.",
+    aboutTitle: "About UWE Bristol",
+    body: [
+      "The University of the West of England is a modern UK university based in Bristol, recognized on the original Bristol site for teaching quality, research, employability, and strong industry links.",
+      "UWE Bristol was established in 1992 and offers hundreds of courses across disciplines including business, engineering, health, and the arts. Its learning environment is positioned around practical experience, placement opportunities, and innovation-led facilities.",
+      "In 2019, UWE Bristol received Gold status in the Teaching Excellence and Student Outcomes Framework, the highest possible TEF rating at the time, reflecting its teaching and student outcome strengths.",
+    ],
+    facts: ["Established 1992", "600+ courses", "TEF Gold recognition"],
+    programmeIntro:
+      "These are the current UWE Bristol awarded routes represented in the prototype.",
+  },
+  {
+    title: "DLC Sri Lanka",
+    originalTitle: "DLC - Sri Lanka",
+    partner: "DLC Sri Lanka",
+    slug: "university-dlc-sri-lanka.html",
+    sourceUrl: "https://bristolinstitute.edu.lk/university/5",
+    eyebrow: "Foundation and higher diploma partner",
+    heroImage: "assets/university-dlc-sri-lanka-header.png",
+    image: "assets/university-dlc-sri-lanka.png",
+    summary:
+      "DLC Sri Lanka pathways support foundation and higher diploma progression across business, finance, psychology, teaching, IT, AI, and data science.",
+    aboutTitle: "About DLC Sri Lanka",
+    body: [
+      "The Distance Learning Centre Limited is described on the original Bristol site as a fully state-owned institute functioning under Sri Lanka's public administration sector.",
+      "DLC was established in 2002 as a World Bank project with counterpart funding from the Government of Sri Lanka, and has served public and private sector personnel for more than 21 years.",
+      "Through Bristol Institute, DLC pathways give students structured foundation and higher diploma routes before degree progression or career entry.",
+    ],
+    facts: ["State-owned institute", "Established 2002", "21+ years of learning"],
+    programmeIntro:
+      "These are the current DLC Sri Lanka foundation and higher diploma routes represented in the prototype.",
+  },
+  {
+    title: "ACCA",
+    originalTitle: "ACCA",
+    partner: "ACCA",
+    slug: "university-acca.html",
+    sourceUrl: "https://bristolinstitute.edu.lk/university/6",
+    eyebrow: "Professional accounting qualification",
+    heroImage: "assets/university-acca-header.png",
+    image: "assets/university-acca.jpg",
+    summary:
+      "ACCA gives Bristol students a globally recognized professional accounting pathway across financial reporting, audit, taxation, and strategic business leadership.",
+    aboutTitle: "About ACCA",
+    body: [
+      "ACCA is positioned on the original Bristol site as a passport to a global finance career, with members and students across many countries and a history of more than 115 years.",
+      "The qualification develops capability in financial reporting, audit, taxation, business strategy, ethics, sustainability, and forward-thinking leadership.",
+      "At Bristol Institute, the ACCA pathway is presented as structured training for aspiring accountants who want technical knowledge, practical skills, and global professional credibility.",
+    ],
+    facts: ["Global accountancy body", "115+ year history", "Professional finance route"],
+    programmeIntro:
+      "This is the ACCA professional qualification route represented in the prototype.",
+  },
+];
+
 const optionList = programmes.map((item) => `<option>${escapeHtml(item.title)}</option>`).join("\n                ");
 
 const card = (item) => `
@@ -956,9 +1022,121 @@ ${footer()}
 </html>
 `;
 
+const universityPage = (page) => {
+  const partnerProgrammes = programmes.filter((item) => item.partner === page.partner);
+
+  return `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${escapeHtml(page.title)} | Bristol Institute</title>
+    <meta
+      name="description"
+      content="${escapeHtml(page.summary)}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+${nav("programmes")}
+
+    <main>
+      <section class="university-hero" style="--university-hero: url('${escapeHtml(page.heroImage)}')">
+        <div class="container university-hero__content">
+          <nav class="breadcrumb breadcrumb--light" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i data-lucide="chevron-right"></i>
+            <a href="programmes.html">Programmes</a>
+            <i data-lucide="chevron-right"></i>
+            <span>${escapeHtml(page.title)}</span>
+          </nav>
+          <p class="eyebrow">${escapeHtml(page.eyebrow)}</p>
+          <h1>${escapeHtml(page.title)}</h1>
+          <p>${escapeHtml(page.summary)}</p>
+          <div class="hero__actions">
+            <a class="button button--primary button--large" href="#programmes-offered">
+              <span>View Programmes</span>
+              <i data-lucide="layout-grid"></i>
+            </a>
+            <a class="button button--ghost button--large" href="https://wa.me/94777552266">
+              <span>Talk to an Advisor</span>
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="university-profile section">
+        <div class="container university-profile__layout">
+          <div class="university-profile__media">
+            <img src="${escapeHtml(page.image)}" alt="${escapeHtml(page.originalTitle)}" />
+          </div>
+          <div class="university-profile__copy">
+            <p class="section-kicker">Partner story</p>
+            <h2>${escapeHtml(page.aboutTitle)}</h2>
+${page.body.map((paragraph) => `            <p>${escapeHtml(paragraph)}</p>`).join("\n")}
+            <div class="university-facts" aria-label="${escapeHtml(page.title)} highlights">
+${page.facts.map((fact) => `              <span>${escapeHtml(fact)}</span>`).join("\n")}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="university-programmes section" id="programmes-offered">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Programmes offered</p>
+              <h2>${escapeHtml(page.title)} programmes</h2>
+            </div>
+            <p class="section-note">${escapeHtml(page.programmeIntro)}</p>
+          </div>
+
+          <div class="programme-grid programme-grid--partner">
+${partnerProgrammes.map(card).join("\n")}
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div class="container contact-strip__inner">
+          <div>
+            <p class="section-kicker">Admissions support</p>
+            <h2>Interested in ${escapeHtml(page.title)}?</h2>
+          </div>
+          <div class="contact-strip__actions">
+            <a class="button button--primary" href="${applyUrl}" target="_blank" rel="noopener">
+              <span>Apply Online</span>
+              <i data-lucide="send"></i>
+            </a>
+            <a class="button button--ghost-dark" href="programmes.html">
+              <span>Compare All Programmes</span>
+              <i data-lucide="layout-grid"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+${footer()}
+  </body>
+</html>
+`;
+};
+
 fs.writeFileSync("programmes.html", programmesPage);
 for (const item of programmes) {
   fs.writeFileSync(item.slug, detailPage(item));
+}
+
+for (const page of partnerPages) {
+  fs.writeFileSync(page.slug, universityPage(page));
 }
 
 for (const file of ["index.html", "admissions.html", "contact.html"]) {
@@ -975,4 +1153,6 @@ const homepageLinks = {
   "programme-mba.html": "programme-mba.html",
 };
 
-console.log(`Generated ${programmes.length} programme cards and ${programmes.length} detail pages.`);
+console.log(
+  `Generated ${programmes.length} programme cards, ${programmes.length} detail pages, and ${partnerPages.length} university pages.`
+);
